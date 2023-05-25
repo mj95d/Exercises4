@@ -14,8 +14,8 @@ import java.util.List;
 
     List<Book> findByCategory(@Param("category") String category);
 
-
-    List<Book> findByNumberOfPages(int numberOfPages);
+@Query("number")   
+        List<Book> findByNumberOfPages(int numberOfPages);
 
 
     List<Book> findByAuthor(@Param("author") String author);
