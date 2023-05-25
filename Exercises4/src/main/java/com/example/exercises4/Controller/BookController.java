@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@RequiredArgsConstructor
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/v1/book")
