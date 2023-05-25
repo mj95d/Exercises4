@@ -13,6 +13,7 @@ import java.util.Optional;
 public interface LibrarianRepository extends JpaRepository<Librarian, Integer> {
 
 
+ @Query("email") 
     Optional<Librarian> findByEmail(@Param("email") String email);
 
 
